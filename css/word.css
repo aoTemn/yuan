@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+html {
+    overflow-y: hidden;
+}
+
+.swiper1 {
+    width: 100vw;
+    min-width: 1280px;
+    height: 100vh;
+}
+
+.swiper1>.swiper-wrapper {
+    width: 100%;
+    height: fit-content;
+
+}
+
+.swiper1>.swiper-wrapper>.swiper-slide:nth-child(-5) {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* .bottom-box {
+    width: 100%;
+}
+
+.bottom-box {
+    width: 100vw !important;
+}
+
+.bottom-big-box {
+    width: 100vw !important;
+} */
+
+.word-big-box {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.word-city-text-box {
+    width: 800px;
+    /* height: 300px; */
+    /* background-color: red; */
+}
+
+.travel-notes-box {
+    width: 500px;
+    height: 34px;
+    background-image: url("../img/word-img/word-text-img2.png");
+    text-align: center;
+    line-height: 34px;
+    color: white;
+    cursor: pointer;
+}
+
+.word-city-text-box>p {
+    color: white;
+    line-height: 28.8px;
+}
+
+/* 开始盒子 */
+.kai-shi-box {
+    cursor: pointer;
+    position: relative;
+    width: 52px;
+    height: 52px;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/word-img/word-kaishi-img3.png");
+}
+
+.kai-shi-box::before {
+    animation: bbb 1s linear infinite;
+    content: '';
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    background-image: var(--befoteimg);
+}
+
+.kai-shi-box>img {
+    width: 25px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    left: 14.5px;
+    animation: aaa 2s ease-in-out infinite;
+}
+
+.city-img {
+    width: 100px !important;
+}
+
+.xingqing {
+    display: block;
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+/* 底部敬请期待 */
+.slide6>div:nth-child(1) {
+    background-color: rgba(17, 17, 17, 0.75);
+}
+
+.slide6>div:nth-child(1)>span {
+    font-size: 36px;
+    color: white;
+}
+
+/* 城市名称盒子 */
+.word-city-name-box {
+    color: white;
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.word-city-name-box>img:nth-child(3) {
+    transform: rotateY(180deg);
+}
+
+.swiper-scrollbar {
+    position: fixed !important;
+    right: 5px !important;
+}
+
+/* 城市列表盒子*/
+.city-ul-box {
+    position: fixed;
+    width: 151px;
+    height: fit-content;
+    /* background-color: red; */
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.city-ul-box::after {
+    content: "";
+    display: block;
+    height: 372px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -40px;
+    right: 8px;
+}
+
+.city-ul-box>div {
+    width: 100%;
+    height: 32px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.city-ul-box>div>p {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 200;
+}
+
+.city-ul-box>div>div {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    transform: rotate(45deg) scale(0.3);
+}
+
+.city-ul-active>p {
+    background-color: white;
+    color: black;
+}
+
+.city-ul-active>div {
+    transform: rotate(45deg) scale(0.5) !important;
+}
+
+.city-ul-active>div::before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff
+}
+
+/* 详情弹窗 */
+.detail-big-box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(18, 18, 18, 0.75);
+}
+
+.detail-small-box {
+    width: 720px;
+    /* background-color: red; */
+    height: 500px;
+
+}
+
+.detail-name-box {
+    width: 100%;
+    height: 60px;
+}
+
+.detail-name-box>p {
+    line-height: 60px;
+    font-size: 28px;
+    color: #fff;
+    padding-left: 24px;
+    width: 640px;
+    box-sizing: border-box;
+    background: url('../img/word-img/detail-name-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(18, 18, 18, 0.15);
+}
+
+.detail-name-box>div {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(18, 18, 18, 0.15);
+    background-image: url('../img/word-img/detail-name-bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+}
+
+.detail-text-box {
+    margin-top: 50px;
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: red; */
+}
+
+.detail-text-box::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 2px;
+    background-color: #756157;
+    opacity: 0.1;
+}
+
+.detail-text-box::-webkit-scrollbar-thumb {
+    background-color: #dfdede;
+    border-radius: 2px;
+}
+
+.detail-text-box>* {
+    width: 636px;
+    color: white;
+}
+
+.detail-text-box>h1 {
+    position: relative;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 66px;
+    height: 66px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.detail-text-box>h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 70px;
+    height: 3px;
+    background: #cca574;
+}
+
+.detail-text-box>div {
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.8
+}
+
+.detail-text-box>img {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    width: 636px;
+}
+
+/* 开始按钮动画 */
+@keyframes aaa {
+    0% {
+        top: 50%;
+    }
+
+    50% {
+        top: 60%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes bbb {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+.f-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-r {
+    display: flex;
+}
+
+.j-s-c {
+    justify-content: center;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.j-s-a {
+    justify-content: space-around;
+}
+
+.j-s-b {
+    justify-content: space-between;
+}
+
+.f-1 {
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.title-bar {
+    background-color: rgba(17, 17, 17, 0.75);
+    height: 66px;
+    top: 0;
+    min-width: 1280px;
+    position: relative;
+}
+
+.a-head-log {
+    background-image: url(../img/headlog.png);
+    width: 240px;
+    height: 66px;
+    display: inline-block;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 30px;
+
+}
+
+.big-box {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    min-width: 1280px;
+}
+
+.head-a-box {
+    position: relative;
+}
+
+.head-a-box>a {
+    display: inline-block;
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    line-height: 66px;
+    position: relative;
+    font-size: 17px;
+}
+
+/* 导航栏右边 */
+.head-right-box {
+    height: 100%;
+    position: absolute;
+    right: 30px;
+    color: #ccc;
+    font-size: 17px;
+}
+
+.app {
+    /* max-width: 1280px; */
+    min-width: 1280px;
+    width: 100%;
+}
+
+.head-guan-box>*:nth-child(2),
+.head-user-box>*:nth-child(2) {
+    font-size: 27px;
+}
+
+.head-user-box {
+    padding: 0 10px;
+}
+
+.head-guan-box {
+    margin-right: 20px;
+}
+
+.head-user-box>*:nth-child(2),
+.head-guan-box>*:nth-child(2) {
+    margin-left: 18px;
+}
+
+.head-guan-box:hover,
+.head-user-box:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* 音乐播放图 */
+.bgm-img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 70px;
+    cursor: pointer;
+}
+
+/* 导航菜单滑块 */
+.head-active {
+    position: relative;
+    text-shadow: 0 0 10px rgb(105, 224, 255);
+    color: rgb(105, 224, 255);
+}
+
+.head-active::before {
+    content: "";
+    width: 40px;
+    position: absolute;
+    height: 5px;
+    background-color: #69e0ff;
+}
+
+/* 当前页面列表字体变化 */
+.new-html {
+    position: relative;
+    text-shadow: 0 0 10px rgb(105, 224, 255);
+    color: rgb(105, 224, 255);
+}
+
+/* 底部盒子 */
+.bottom-box {
+    width: 100%;
+    height: fit-content;
+}
+
+
+.bottom-ul {
+    width: 100%;
+    height: 52px;
+    background-color: #111111;
+}
+
+.bottom-ul>li>span {
+    color: #707070;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.bottom-ul>li+li {
+    margin-left: 34px;
+}
+
+.bottom-big-box {
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 30px 94px 20px 94px;
+    background-color: #000000;
+}
+
+
+.bottom-img2 {
+    width: 110px;
+}
+
+.bottom-img1 {
+    height: 42px;
+}
+
+.bottom-img-span {
+    display: inline-block;
+    width: 1px;
+    height: 28px;
+    margin: 0 25px;
+    background-color: #666666;
+}
+
+.botton-right-box {
+    height: 100%;
+    margin-left: 60px;
+}
+
+.bottom-ul-a {
+    height: 52px;
+}
+
+.botton-right-box a {
+    font-size: 14px;
+}
+
+.botton-right-box>div:nth-child(1)>a {
+    color: white;
+}
+
+.botton-right-box>div:nth-child(1)>span {
+    background-color: white;
+    margin-top: 2px;
+}
+
+.botton-right-box a {
+    color: #aaa;
+}
+
+.botton-right-box p {
+    color: white;
+    font-size: 14px;
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.botton-right-box>div+div {
+    line-height: 24px;
+}
+
+.botton-right-box span {
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: #aaa;
+    margin: 0 8px;
+}
+
+.bottom-img-log-box {
+    margin-top: 10px;
+}
+
+.bottom-img-log-box>img {
+    height: 46px;
+}
+
+.bottom-img-log-box>img+img {
+    cursor: pointer;
+    margin-left: 15px;
+
+}
+
+/* 登录表单 */
+.masuk-box {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.masuk-small-box {
+    width: 450px;
+    height: 467px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+    padding: 30px 40px 50px 40px;
+    box-sizing: border-box;
+}
+
+.masuk-box>div:nth-child(1)>img:nth-child(1) {
+    width: 107px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.masuk-box>div:nth-child(1)>img:nth-child(2) {
+    width: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.masuk-xuanxiang {
+    font-size: 18px;
+    color: #8b8f91;
+    width: 100%;
+}
+
+.masuk-xuanxiang>div {
+    text-align: center;
+    height: 47px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.masuk-xuanxiang>.masuk-active {
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+.masuk-active::before {
+    content: "";
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 3px;
+}
+
+
+.masuk-input1 {
+    width: 100%;
+    height: 46px;
+    line-height: 26px;
+    font-size: 16px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 35px;
+    border: 1px solid #ebebeb;
+}
+
+.masuk-tips {
+    font-size: 12px;
+    color: red;
+}
+
+.masuk-div2 {
+    height: 46px;
+    margin-top: 15px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 15px;
+}
+
+.masuk-div2>*:nth-child(1) {
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
+.masuk-div2>button:nth-child(2) {
+    width: 120px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    color: #7f858a;
+}
+
+.masuk-btn1 {
+    width: 100%;
+    height: 50px;
+    background-color: #3b4354;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.masuk-zuce-box {
+    margin-top: 12px;
+    color: #7f858a;
+}
+
+.masuk-zuce-box>a {
+    color: #7f858a;
+}
+
+.masuk-text-box {
+    margin-top: 10px;
+    line-height: 24px;
+}
+
+.masuk-text-box>a {
+    color: #7f858a;
+
+}

@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+.role-big-box {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    min-width: 1280px;
+    overflow: hidden;
+}
+
+.role-bg-box {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-size: 100% 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: aaa 40s infinite linear;
+}
+
+.role-xian-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url("../img/role-img/roel-bf-3.png");
+    background-size: cover 100%;
+    background-position-x: -90px;
+    background-repeat: no-repeat;
+}
+
+/* 城市选择列表 */
+.city-ul {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    width: 370px;
+    background-color: transparent;
+    box-sizing: border-box;
+    /* padding-top: 187px; */
+    text-align: center;
+}
+
+.city-ul>ul {
+    display: block;
+    height: 100%;
+    overflow: auto;
+}
+
+.city-ul>ul>li:nth-child(1) {
+    margin-top: 187px;
+}
+
+.city-ul>ul>li {
+    position: relative;
+    width: 100%;
+    height: 54px;
+    box-sizing: border-box;
+    padding-left: 70px;
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    background-image: url('../img/role-img/roel-city-img.png');
+}
+
+.city-ul>ul>li>p {
+    display: inline-block;
+    width: fit-content;
+    color: #fff;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.city-ul>ul::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 1280px;
+    position: absolute;
+    left: 37px;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.role-city-active {
+    background-image: url('../img/role-img/roel-city-active-img.png') !important;
+    background-position: 0 center !important;
+    padding-left: 80px !important;
+}
+
+/* 角色选择 */
+.role-ul-xuan {
+    z-index: 3;
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(204, 204, 204, 0.2);
+    background-image: url("../img/role-img/role-ul-bg-img.png");
+    background-size: 100% 100%;
+}
+
+/* 列表轮播 */
+.swiper-box {
+    width: 830px;
+    height: 168px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.swiper-box .swiper-wrapper>div {
+    font-size: 0;
+    width: 110px !important;
+    height: 132px;
+    /* border: 1px solid black; */
+    margin-left: 34px;
+    background-image: url("../img/role-img/roel-bg-img.png");
+    border-radius: 5px;
+    color: white;
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 0 0px;
+    background-size: 100% 200%;
+
+
+}
+
+swiper1 .swiper-wrapper>div>img {
+    width: 106px;
+    margin: 2px auto 0;
+    height: 106px;
+}
+
+.swiper-box .swiper-wrapper>div>p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+    text-align: center;
+}
+
+.swiper-box .swiper-slide-active,
+.swiper-wrapper>div:hover {
+    background-position: 0 -132px !important;
+
+}
+
+.swiper-slide-active>p,
+.swiper-wrapper>div:hover>p {
+    color: black !important;
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: "" !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 45px !important;
+    height: 64px !important;
+    position: absolute;
+}
+
+.swiper-button-prev {
+    left: 15vw;
+    background-image: url("../img/role-img/role-shangyige-img.png");
+}
+
+.swiper-button-next {
+    right: 15vw;
+    background-image: url("../img/role-img/role-xiayige-img.png");
+}
+
+
+.role-bg-peopre-box {
+    position: absolute;
+    width: 1280px;
+    background-color: transparent;
+    z-index: 2;
+    height: 100%;
+    right: 0;
+    left: 20%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.swiper-role-bg-box .swiper-slide {
+    position: relative;
+}
+
+.swiper-role-bg-box>.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-role-bg-box>.swiper-wrapper>.swiper-slide {
+    width: 100%;
+}
+
+.swiper-role-bg-box>.swiper-wrapper>.swiper-slide>img:nth-child(1) {
+    height: 800px;
+
+}
+
+.swiper-role-bg-box>.swiper-wrapper>.swiper-slide>img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    top: 68px;
+    width: auto;
+    height: 378px;
+    left: 0;
+    opacity: 0.1;
+}
+
+.role-information-box {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    margin-top: 150px;
+}
+
+.role-information-box>img:nth-child(1) {
+    width: 400px;
+}
+
+.role-information-box>div:nth-child(2) {
+    margin-top: -10px;
+}
+
+/* cv盒子 */
+.role-information-box>div:nth-child(2)>div:nth-child(1) {
+    width: 280px;
+    height: 54px;
+    background-color: #cca574;
+    background-image: url("../img/role-img/cv-bg-img.jfif");
+    background-repeat: no-repeat;
+}
+
+.role-information-box>div:nth-child(2)>div:nth-child(1)>div {
+    height: 54px;
+    line-height: 54px;
+    width: fit-content;
+    font-size: 24px;
+    color: #24333c;
+    margin-left: 54px;
+}
+
+.role-information-box>div:nth-child(2)>div:nth-child(2) {
+    height: 54px;
+    width: 54px;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url("../img/role-img/cv-bofang-img.png"); */
+}
+
+.role-information-box>div:nth-child(2)>div:nth-child(3) {
+    width: 80px;
+    height: 32px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-sizing: content-box;
+    margin-left: 50px;
+}
+
+.role-information-box>div:nth-child(2)>div:nth-child(3)>div {
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.6);
+    padding: 0 4px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+.role-information-box>div:nth-child(2)>div:nth-child(3)>div>p {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #dbb17d;
+    color: #dbb17d;
+    font-size: 0;
+    text-align: center;
+    line-height: 26px;
+}
+
+.character__sbtn--active {
+    background: none !important;
+    font-size: 20px !important;
+}
+
+.role-information-box>div:nth-child(3) {
+    width: 550px;
+    height: fit-content;
+    margin-top: 20px;
+    background-color: rgba(1, 1, 1, 0.5);
+    box-sizing: border-box;
+    padding: 10px 0 10px 15px;
+}
+
+.role-information-box>div:nth-child(3)::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url("../img/role-img/role-text-bg.png") center no-repeat;
+    background-size: 20px;
+    margin-right: 24px;
+    margin-top: 4px
+}
+
+.role-information-box>div:nth-child(3)>p {
+    width: 455px;
+    font-size: 16px;
+    color: white;
+    line-height: 26px;
+}
+
+.swiper-role-bg-box .swiper-slide {
+    overflow: hidden;
+}
+
+/* 背景动画 */
+@keyframes aaa {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.3, 1.3)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
